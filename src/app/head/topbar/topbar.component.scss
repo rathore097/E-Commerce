@@ -1,0 +1,55 @@
+@import "variables";
+.topbar {
+  @include flex-box;
+  height: 45px;
+  background-color: $topbar-bg;
+  padding: 0px;
+  div.social {
+    margin-left: 40px;
+    fa-icon {
+      color: $topbar-cl;
+      padding: 15px;
+    }
+  }
+  div.end {
+    @include flex-box;
+    form.option {
+      height: 72px;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  span {
+    font-size: 13px;
+  }
+}
+::ng-deep {
+  .topbar {
+    font-size: 18px;
+  }
+  .mat-form-field {
+    width: 42%;
+    .mat-form-field-wrapper {
+      // height: 0px;
+      .mat-form-field-flex {
+        padding: 0px;
+        .mat-select {
+          .mat-select-value {
+            width: 75%;
+          }
+        }
+      }
+    }
+  }
+  #mat-select-0-panel {
+    box-shadow: none;
+  }
+}
+@media (max-width: 1039px) {
+  .topbar {
+    display: none;
+  }
+}
+.mat-form-field-underline {
+  display: none;
+}

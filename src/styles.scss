@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+#form-id {
+  .mat-form-field-underline {
+    display: none;
+  }
+}
+#footer-form-id {
+  .mat-form-field-placeholder {
+    display: none;
+  }
+  .mat-form-field-underline {
+    opacity: 0.5;
+  }
+  .mat-focused {
+    & .mat-form-field-underline {
+      opacity: initial;
+    }
+    & .mat-form-field-ripple {
+      background-color: #e65540;
+      height: 1px;
+    }
+  }
+  input {
+    caret-color: auto;
+  }
+}

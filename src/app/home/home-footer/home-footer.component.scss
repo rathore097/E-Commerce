@@ -1,0 +1,23 @@
+h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #222222;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin: 6% 0;
+}
+mat-grid-tile:nth-child(2) {
+  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+}
+mat-grid-tile div {
+  padding: 0px 20px;
+}
+.hov-img div {
+  color: #888888;
+}
+.blog {
+  margin: 20px 0px;
+}

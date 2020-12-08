@@ -1,0 +1,17 @@
+<h1>@ FOLLOW US ON INSTAGRAM</h1>
+<mat-grid-list
+  class="blog"
+  [cols]="breakpoint"
+  rowHeight="5rem"
+  gutterSize="25px"
+  (window:resize)="onResize($event)"
+>
+  <mat-grid-tile
+    *ngFor="let item of list"
+    [rowspan]="item.rows"
+    [colspan]="item.cols"
+    class="hov-img"
+  >
+    <div [innerHtml]="item.html"></div>
+  </mat-grid-tile>
+</mat-grid-list>

@@ -1,0 +1,21 @@
+<h1>OUR BLOG</h1>
+<mat-grid-list
+  class="blog"
+  [cols]="breakpoint"
+  rowHeight="13rem"
+  gutterSize="25px"
+  (window:resize)="onResize($event)"
+>
+  <mat-grid-tile
+    *ngFor="let item of list"
+    [rowspan]="item.rows"
+    [colspan]="item.cols"
+    class="hov-img"
+  >
+    <img
+      src="../../../assets/blog/blog-0{{ item.data }}.jpg"
+      alt="blog-image"
+    />
+    <div class="blog-text" [innerHTML]="item.html"></div>
+  </mat-grid-tile>
+</mat-grid-list>

@@ -1,0 +1,23 @@
+<!-- <img src="../../../assets/bg-banner/banner-08.jpg" alt="dresses" />
+<img src="../../../assets/bg-banner/shop-item-09.jpg" alt="dresses" /> -->
+<div class="slider2">
+  <mat-grid-list
+    [cols]="breakpoint"
+    rowHeight="18rem"
+    gutterSize="25px"
+    (window:resize)="onResize($event)"
+  >
+    <mat-grid-tile
+      *ngFor="let item of list"
+      [rowspan]="item.rows"
+      [colspan]="item.cols"
+      class="hov-img"
+    >
+      <img
+        src="../../../assets/bg-banner/banner-0{{ item.data }}.jpg"
+        alt=""
+        style="object-fit: cover; width: 100%; height: 100%"
+      />
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

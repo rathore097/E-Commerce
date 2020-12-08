@@ -1,0 +1,94 @@
+<div class="footer">
+  <div class="flex-wrap">
+    <div class="block w-1">
+      <h4>GET IN TOUCH</h4>
+      <p class="footer-para">
+        Any questions? Let us know in store at 8th floor, 379 Hudson St, New
+        York, NY 10018 or call us on (+1) 96 716 6879
+      </p>
+      <div class="social">
+        <a href="https://facebook.com/shopify" class="topbar-social-item">
+          <fa-icon [icon]="faFacebookF"></fa-icon>
+        </a>
+        <a href="" class="topbar-social-item">
+          <fa-icon [icon]="faTwitter"></fa-icon>
+        </a>
+        <a href="" class="topbar-social-item"
+          ><fa-icon [icon]="faPinterestSquare"></fa-icon
+        ></a>
+        <a href="" class="topbar-social-item"
+          ><fa-icon [icon]="faGooglePlusG"></fa-icon
+        ></a>
+        <a href="" class="topbar-social-item"
+          ><fa-icon [icon]="faInstagram"></fa-icon
+        ></a>
+      </div>
+    </div>
+    <div class="block w-2">
+      <h4>CATEGORIES</h4>
+      <ul>
+        <li>Men</li>
+        <li>Women</li>
+        <li>Dresses</li>
+        <li>Sunglasses</li>
+      </ul>
+    </div>
+    <div class="block w-2">
+      <h4>LINKS</h4>
+      <ul>
+        <li>Search</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+        <li>Returns</li>
+      </ul>
+    </div>
+    <div class="block w-2">
+      <h4>HELP</h4>
+      <ul>
+        <li>Track Order</li>
+        <li>Returns</li>
+        <li>Shipping</li>
+        <li>FAQs</li>
+      </ul>
+    </div>
+    <div class="block w-3">
+      <h4>NEWSLETTER</h4>
+      <form id="footer-form-id">
+        <mat-form-field
+          class="footer-form"
+          appearance="legacy"
+          floatLabel="never"
+        >
+          <input
+            matInput
+            (focus)="checkPlaceHolder()"
+            (blur)="checkPlaceHolder()"
+            placeholder="{{ myplaceHolder }}"
+          />
+        </mat-form-field>
+      </form>
+      <button mat-flat-button>SUBSCRIBE</button>
+    </div>
+  </div>
+  <div class="payment">
+    <div class="card-icons">
+      <a><fa-icon [icon]="faCcVisa"></fa-icon></a>
+      <a><fa-icon [icon]="faCcMastercard"></fa-icon></a>
+      <a><fa-icon [icon]="faCcAmex"></fa-icon></a>
+      <a><fa-icon [icon]="faCcPaypal"></fa-icon></a>
+    </div>
+    <div class="t-center">
+      Copyright © 2018
+      <a
+        href="https://themeforest.net/user/masstechnologist/portfolio?ref=masstechnologist"
+        >MassTechnologist.com.</a
+      >
+      All rights reserved.
+    </div>
+  </div>
+</div>
+<div class="btn-back-to-top bg0-hov" id="myBtn" style="display: flex">
+  <span class="symbol-btn-back-to-top">
+    <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+  </span>
+</div>

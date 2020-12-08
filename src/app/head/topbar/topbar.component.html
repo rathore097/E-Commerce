@@ -1,0 +1,32 @@
+<mat-toolbar class="topbar">
+  <div class="social">
+    <a href="https://facebook.com/shopify" class="topbar-social-item">
+      <fa-icon [icon]="faFacebookF"></fa-icon>
+    </a>
+    <a href="" class="topbar-social-item">
+      <fa-icon [icon]="faTwitter"></fa-icon>
+    </a>
+    <a href="" class="topbar-social-item"
+      ><fa-icon [icon]="faPinterestSquare"></fa-icon
+    ></a>
+    <a href="" class="topbar-social-item"
+      ><fa-icon [icon]="faGooglePlusG"></fa-icon
+    ></a>
+    <a href="" class="topbar-social-item"
+      ><fa-icon [icon]="faInstagram"></fa-icon
+    ></a>
+  </div>
+  <span class="free-shipping">Free shipping for standard order over $100</span>
+  <span>fashe@example.com</span>
+  <div class="end">
+    <form class="option" id="form-id">
+      <mat-form-field>
+        <mat-select [(value)]="selectedFood">
+          <mat-option [value]="option.value" *ngFor="let option of currency">{{
+            option.viewValue
+          }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </form>
+  </div>
+</mat-toolbar>

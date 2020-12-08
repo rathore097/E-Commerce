@@ -1,0 +1,25 @@
+@import "utils";
+
+.flex-centre {
+  @include flexbox-c;
+}
+.slide img {
+  height: 65rem;
+}
+.hov-img {
+  & img {
+    max-width: 100%;
+    max-height: 50rem;
+    transition: all 0.6s;
+  }
+  &:hover img {
+    transform: scale(1.1);
+  }
+}
+.carousel {
+  margin: 10px;
+}
+.banner {
+  margin: 40px;
+}
+

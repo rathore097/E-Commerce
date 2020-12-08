@@ -1,0 +1,76 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: #555555;
+  line-height: 1.8;
+  background-color: #f0f0f0;
+}
+.footer {
+  padding: 20px;
+  .flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    .block {
+      padding: 15px;
+      .social {
+        padding: 20px 0px;
+        fa-icon {
+          color: #888888;
+          padding: 10px;
+          font-size: large;
+        }
+      }
+      .footer-para {
+        max-width: 400px;
+      }
+      h4 {
+        padding: 30px 0px;
+      }
+      li {
+        list-style: none;
+      }
+      .w-1 {
+        width: 30%;
+      }
+      .w-2 {
+        width: 14%;
+      }
+      .w-3 {
+        width: 28%;
+      }
+      button {
+        background-color: #111111;
+        font-size: 16px;
+        color: white;
+        border-radius: 23px;
+        width: 100%;
+        height: 46px;
+      }
+    }
+  }
+  .payment {
+    display: flex;
+    flex-direction: column;
+    .card-icons {
+      display: flex;
+      justify-content: center;
+      & a fa-icon {
+        color: #212529;
+        font-size: xx-large;
+        padding: 5px;
+      }
+    }
+    .t-center {
+      text-align: center;
+    }
+  }
+}
+.footer-form {
+  width: 100%;
+  & .mat-form-field-wrapper {
+    height: auto;
+  }
+}
